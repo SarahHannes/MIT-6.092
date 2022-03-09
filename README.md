@@ -1,4 +1,5 @@
-# MIT-6.092
+# MIT-6.092 
+### Introduction to Programming in Java
 Repository for MIT Open Courseware Problem Sets
 
 Description and test suites (if any) for each problem set can be found in its respective folders.
