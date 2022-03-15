@@ -3,7 +3,7 @@ public class Library {
     // Add the missing implementation to this class
 	
 	static String openingHour = "Libraries are open daily from 9am to 5pm.";
-	static int bookcounter = 0;
+	static int bookcounter = 0; // Counter to keep count of books in booklist
 	String address;
 	Book[] booklist = new Book[100];	
 
@@ -15,7 +15,7 @@ public class Library {
 	
 	void addBook(Book book1) {
 		booklist[bookcounter] = book1;
-		bookcounter++;
+		bookcounter++; // increment counter after each addition of new book
 	}
 	
 	
@@ -30,11 +30,11 @@ public class Library {
 	
 	
 	void printAvailableBooks() {
-		if(booklist[0] == null) {
+		if(booklist[0] == null) { // if the first element in booklist is a null
 			System.out.println("No book in catalog");
 		}else {
-			for(int i = 0; i < booklist.length; i++) {
-				if(booklist[i] != null && booklist[i].isBorrowed() == false) {
+			for(int i = 0; i < booklist.length; i++) { // for each book in booklist
+				if(booklist[i] != null && booklist[i].isBorrowed() == false) { // if book is not null, and it is not borrowed
 					System.out.println(booklist[i].getTitle());
 					}
 				}
